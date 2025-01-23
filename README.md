@@ -25,3 +25,25 @@ A chatbot designed to provide support and information related to mental health. 
    git clone https://github.com/nilavanan-ver-4/Mental-health-Chatbot.git
    cd Mental-health-Chatbot
    ```
+2.Create and activate a virtual environment:
+
+sh
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+3.Install dependencies:
+
+ ```sh
+pip install -r requirements.txt
+```
+4.Install additional dependencies:
+
+``` sh
+python -m spacy download en_core_web_sm
+pip install -q -U google-generativeai
+python -m spacy download xx_ent_wiki_sm
+```
+
+5. Run the Python application:
+```sh
+python app.py
+```
